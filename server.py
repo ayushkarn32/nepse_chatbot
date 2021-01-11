@@ -37,7 +37,5 @@ while True:
             else:
                 reply = make_reply(message,f_name)
                 bot.send_message(reply,from_)
-    #else:
-        #reply = make_reply("no data","no data")
-        #bot.send_message(reply, from_)
+  
 
