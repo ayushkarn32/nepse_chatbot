@@ -1,5 +1,5 @@
 from bot import telegram_chatbot
-import scrap 
+import sharebot
 
 bot = telegram_chatbot("config.cfg")
 
@@ -11,7 +11,7 @@ def make_reply(msg,f_name):
         reply = "Commands Available. \n 1. /end --> End the connection \n 2. /help --> Help details."
         #reply = "hello {}".format(f_name)
     else:
-        reply=scrap.StockPrice(msg)
+        reply=sharebot.marketvalue(msg)
     return reply
 
 update_id = None
